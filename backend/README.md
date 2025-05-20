@@ -12,6 +12,12 @@ GET - http://localhost:5000/api/products/
 
 GET - http://localhost:5000/api/products/:id
 
+POST - http://localhost:5000/api/products/upload
+
+POST - http://localhost:5000/api/orders/
+
+GET - http://localhost:5000/api/orders/my
+
 
 
 {
@@ -40,7 +46,10 @@ GET - http://localhost:5000/api/products/:id
   "price": 99,
   "category": "Accessories",
   "stock": 60,
-  "image": "mxmaster3.jpg"
+  "image": {
+    "url": "https://res.cloudinary.com/...jpg",
+    "public_id": "shopconnect/products/abc123"
+  }
 }
 
 
@@ -50,5 +59,8 @@ GET - http://localhost:5000/api/products/:id
   "price": 1999,
   "category": "Graphics Cards",
   "stock": 5,
-  "image": "rtx4090.jpg"
+  "image": {
+    "url": "https://res.cloudinary.com/...jpg",
+    "public_id": "shopconnect/products/abc123"
+  }
 }

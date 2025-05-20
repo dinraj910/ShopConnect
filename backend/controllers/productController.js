@@ -28,7 +28,7 @@ exports.createProduct = async (req,res)=>{
         const savedProduct = await product.save();
 
         res.status(201).json({message:"Product created successfully ✅😊👍",product:savedProduct});
-    }catch{
+    }catch(error){
         console.log(error);
         res.status(500).json({message:"❌Something went wrong while creating product ❌"});
     }
