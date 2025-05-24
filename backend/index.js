@@ -7,6 +7,8 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
+const reviewRoutes = require('./routes/reviewRoutes');
+const postRoutes = require('./routes/postRoutes');
 
 const app = express();
 dotenv.config({path: __dirname + '/.env'});
@@ -29,6 +31,10 @@ app.use('/api/user',userRoutes);
 app.use('/api/products',productRoutes);
 // Routes for orders
 app.use('/api/orders',orderRoutes);
+// Routes for reviews
+app.use('/api/products',reviewRoutes);
+// Routes for posts
+app.use('/api/posts',postRoutes);
 
 
 // Start server
