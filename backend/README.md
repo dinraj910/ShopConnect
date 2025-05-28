@@ -36,4 +36,4 @@ POST = http://localhost:5000/api/posts/:id/comment
 
 PUT - http://localhost:5000/api/posts/:id/like
 
-PUT - http://localhost:5000/api/users/:id/follow
+PUT - http://localhost:5000/api/user/:id/follow
